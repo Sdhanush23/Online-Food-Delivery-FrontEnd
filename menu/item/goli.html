@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="aqua ">
+<h1 style="text-align: center;color: aqua;background-color:none ;">If you like order</h1>
+
+<form action="goli.html" method="post">
+  <div class="form-group">
+    <label for="fullname" style="color: aqua;">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email"style="color:aqua;">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone"style="color: aqua;">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+
+  <div class="form-group">
+    <label for="quantity"style="color: aqua;">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+  </div>
+
+  <div class="form-group">
+    <label for="comments"style="color: aqua;">Address:</label>
+    <textarea id="comments" name="comments"></textarea>
+  </div>
+
+  <button type="submit" onclick="fun()">Place Order</button>
+</form>
+<script>
+  function fun(){
+  alert("order has been placed");
+ }
+</script>
+</body>
+</html>

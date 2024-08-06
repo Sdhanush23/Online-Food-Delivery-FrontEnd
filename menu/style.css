@@ -1,0 +1,292 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f3deba;
+  }
+  
+  .navbar {
+    height: 100px; /* Adjust the height as needed */
+    width: 100%;
+    background-color: #675d50;
+  }
+  
+  .blurred-container {
+    position: relative;
+  }
+  
+  .intro {
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fefae0;
+    font-size: x-large;
+    margin-top: 20px; /* Add margin to create a gap between navbar and content */
+  }
+  
+  .typing-container {
+    position: relative;
+    height: 45vh;
+    width: 100vw;
+    overflow: hidden;
+    border: 2px solid #675d50;
+  }
+  
+  .typing {
+    height: 100%;
+    width: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fefae0;
+    font-size: xx-large;
+  }
+  
+  .text-overlay p {
+    margin: 0;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  
+  .intro h1 {
+    margin: 10px;
+    font-family: "Playfair Display", serif; /* Change font-family */
+    font-weight: bolder;
+    font-size: xx-large; /* Increase font size */
+  }
+  
+  
+  .intro h2 {
+    margin-bottom: 50px;
+    font-family: "Playpen Sans", cursive;
+    font-weight: bold;
+  }
+  .cloud1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 150px;
+    left: 500px;
+  }
+  
+  .cloud2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 60px;
+    left: 300px;
+  }
+  
+  .cloud3 {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    top: 200px;
+    left: 95px;
+  }
+  
+  .cloud4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    right: 220px;
+  }
+  
+  .cloud5 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 250px;
+    right: 450px;
+  }
+  
+  .cloud6 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 200px;
+    right: 30px;
+  }
+  
+  .hrcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  h1 {
+    margin-top: 40px;
+    padding-bottom: 10px;
+  }
+  
+  hr {
+    border-style: none;
+    border-top: dotted;
+    border-width: 5px;
+    border-color: #675d50;
+    width: 60%;
+  }
+  
+  .skills {
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .skills p {
+    font-family: 'Heebo', sans-serif; /* Change font-family */
+    font-size: medium;
+  }
+  
+  .skills hr {
+    margin-top: 40px;
+  }
+  .container {
+    margin: 20px;
+  }
+  .container img {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    transition: all 0.3s ease-in;
+    border-radius: 60%;
+  }
+  p {
+    font-family: "Dancing Script", cursive;
+    font-style: italic;
+    font-size: medium;
+  }
+  .container img:hover {
+    height: 200px;
+    width: 200px;
+    transform: scale(1.2);
+  }
+  .right {
+    width: 60%;
+    height: 200px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .left {
+    width: 40%;
+    height: 200px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact {
+    height: 100px;
+    width: 100vw;
+    background-color: #675d50;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .contact img {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .navbar {
+      height: 70px; /* Adjust navbar height for smaller screens */
+    }
+  
+    .intro {
+      height: auto;
+    }
+  
+    .typing-container {
+      height: auto;
+    }
+  
+    .cloud1,
+    .cloud2,
+    .cloud3,
+    .cloud4,
+    .cloud5,
+    .cloud6 {
+      display: none; /* Hide all clouds initially */
+    }
+  
+    .cloud1,
+    .cloud2,
+    .cloud3{
+      display: block; /* Display only two clouds for small screens */
+    }
+  
+    .hrcontainer {
+      margin-top: 30px;
+    }
+  
+    .intro h1 {
+      margin: 10px;
+      font-size: large;
+    }
+  
+    hr {
+      width: 80%;
+    }
+  
+    .skills {
+      margin-top: 30px;
+    }
+  
+    .container img {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .container img:hover {
+      height: 200px;
+      width: 200px;
+    }
+  
+    .right,
+    .left {
+      width: 100%;
+      float: none;
+    }
+  
+    .contact {
+      height: 80px;
+    }
+  
+    .contact img {
+      height: 20px;
+      width: 20px;
+      margin: 10px;
+    }
+  }
